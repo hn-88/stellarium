@@ -8,6 +8,11 @@ dist: xenial
 compiler:
   - gcc
   
+# safelist - build only this branch
+branches:
+  only:
+  - 0.10.5
+  
 before_install:
   - sudo apt-get update
 
